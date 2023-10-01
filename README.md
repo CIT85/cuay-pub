@@ -1,2 +1,2 @@
-# cuay-pub
-Cua Yang Public repo for CIT85 
+# cuay-pri
+Cua Yang public repo for CIT85
