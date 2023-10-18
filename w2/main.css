@@ -1,0 +1,16 @@
+body {
+    background-color: #3e1458;
+    color: #3e1458;
+}
+
+a {
+    color: #beabca;
+}
+a:visited {
+    color: #831d1d;
+}
+a:hover {
+    color: #3416df;
+}
+
+
