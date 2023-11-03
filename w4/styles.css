@@ -1,14 +1,51 @@
 
 body {
      background-color: black;
+     color: #c408a4;
     }
 
+    p {
+        color: rgba(185, 39, 173, 0.842);
+    }
+h1 {
+    color: rgb(168, 14, 91);
+}
+h2 {
+    color: #b60dae;
+}
 
+thead {
+    background-color: rgb(15, 8, 73);
+}
 
+tbody {
+    background-color: hsla(233, 89%, 4%, 0.863);
+}
+tfoot {
+    background-color:rgba(29, 16, 104, 0.445)
+}
 
+.palette section {
+    width: 200px; 
+    height: 200px;
+    margin: 25px; 
+    border-radius: 25px;
+}
 
+.indigodye {
+    background-color: rgb(27,66,106);
+}
+ .gunmetal {   
+    background-color: rgb(29,45,47);
+}
 
+.pennblue {    
+    background-color: rgb(23,37,95);
+}
 
-
-
-
+.davysgray {
+    background-color: rgb(93,94,109);
+}
+.silver { 
+    background-color: rgb(179,182,180);
+}
