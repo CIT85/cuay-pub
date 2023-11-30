@@ -1,4 +1,4 @@
-          /* Reset some default browser styles */
+/* Reset some default browser styles */
 body, h1, h2, p, ul, li, table, th, td, figure {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   background-image: linear-gradient(to bottom right, #000000, #14213d, #5a0001, #f6e8ea);
   margin: 0;
-  color: #dcd2d2;
+  color: #fff; /* White text color */
 }
 
 .container {
@@ -19,12 +19,7 @@ body {
   margin: auto;
 }
 
-.box {
-  min-width: 100px;
-  min-height: 100px;
-  background-image: linear-gradient(to bottom right, #000000, #14213d, #5a0001, #f6e8ea);
-}
-
+/* Common styles for header, nav, section, article, main, footer, and .cuisine-section */
 header, nav, section, article, main, footer, .cuisine-section {
   border: 1px solid rgb(30, 0, 255);
   padding: 10px;
@@ -35,8 +30,8 @@ header, nav, section, article, main, footer, .cuisine-section {
 /* Header styles */
 header {
   background-color: #030303;
-  color: #fff;
   text-align: center;
+  color: #fff;
   padding: 10px;
 }
 
@@ -50,14 +45,14 @@ h1 {
 nav {
   text-align: center;
   background-color: #000;
-  color: #fff;
   padding: 0.5em;
+  color: #fff;
 }
 
 nav ul {
   list-style-type: none;
-  display: flex; /* Use Flexbox */
-  justify-content: center; /* Center the items horizontally */
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
@@ -78,14 +73,20 @@ main {
   padding: 20px;
 }
 
-.column {
+/* Common styles for .column and .color-palette */
+.column, .color-palette {
   padding: 10px;
   margin: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 10px;
 }
 
+/* .column specific styles */
+.column {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* .color-palette specific styles */
 .color-palette {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +101,7 @@ main {
   border-radius: 5px;
 }
 
+/* Individual color styles */
 .color1 {
   background-color: #000000;
   color: #fff;
@@ -125,27 +127,23 @@ main {
   color: #000;
 }
 
-#web-content h2 {
-  color: #3a414f; /* Platinum */
+/* Common styles for #web-content and #color-palette sections */
+#web-content h2, #color-palette h2 {
+  color: #3a414f;
 }
 
-#web-content p {
-  color: #dcd2d2; /* Light gray text */
+#web-content p, #color-palette p {
+  color: #dcd2d2;
 }
 
-#color-palette h2 {
-  color: #3a414f; /* Platinum */
-}
-
-#color-palette p {
-  color: #dcd2d2; /* Light gray text */
-}
-
+/* Footer styles */
 footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
+  background-color: #333;
+  color: #fff;
 }
 
 .top {
@@ -176,22 +174,6 @@ th {
   background-color: rgb(38, 9, 100);
 }
 
-/* Footer styles */
-footer {
-  background-color: #333; /* Dark background for better contrast */
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-body {
-  scroll-behavior: smooth;
-  background-color: black;
-  background-image: radial-gradient(blue,black);
-}
-
 /* Image styles */
 img {
   border-radius: 50%;
@@ -214,7 +196,7 @@ img {
   text-decoration: underline;
   border-radius: 5px;
   margin-right: 20px;
-  margin-bottom: 20px; /* Adjust as needed */
+  margin-bottom: 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -229,12 +211,10 @@ body:hover .top {
 }
 
 /* Base styles for all screen sizes */
-
 /* Extra Small */
 @media only screen and (max-width: 575px) {
   body {
     font-size: 14px;
-    background-color: #000000;
     background-image: radial-gradient(#000000, #4a001f, #6a0f49);
   }
 
@@ -244,11 +224,9 @@ body:hover .top {
 }
 
 /* Media queries for different screen sizes */
-
 /* Small */
 @media only screen and (min-width: 576px) {
   body {
-    background-color: #000000;
     background-image: radial-gradient(#000, #210b2c, #55286f);
   }
 
@@ -268,7 +246,6 @@ body:hover .top {
 /* Medium */
 @media only screen and (min-width: 768px) {
   body {
-    background-color: #000000;
     background-image: radial-gradient(#470a14, #171738, #51344d);
   }
 
@@ -288,8 +265,7 @@ body:hover .top {
 /* Large screens */
 @media only screen and (min-width: 992px) {
   body {
-    background-color: #000000;
-    background-image: radial-gradient(#0a2463,#45040f);
+    background-image: radial-gradient(#0a2463, #45040f);
   }
 
   h1 {
@@ -308,8 +284,7 @@ body:hover .top {
 /* Extra Large screens */
 @media only screen and (min-width: 1200px) {
   body {
-    background-color: #000000;
-    background-image: radial-gradient(#383f51,#201e50,#251351);
+    background-image: radial-gradient(#383f51, #201e50, #251351);
   }
 
   h1 {
@@ -323,4 +298,73 @@ body:hover .top {
   h3 {
     font-size: 32px;
   }
+}
+
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6e8ea;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+ }
+
+  header {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+label {
+  display: block;
+   margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color:gray;            
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #250963;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
