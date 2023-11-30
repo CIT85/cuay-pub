@@ -1,0 +1,326 @@
+          /* Reset some default browser styles */
+body, h1, h2, p, ul, li, table, th, td, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-image: linear-gradient(to bottom right, #000000, #14213d, #5a0001, #f6e8ea);
+  margin: 0;
+  color: #dcd2d2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.box {
+  min-width: 100px;
+  min-height: 100px;
+  background-image: linear-gradient(to bottom right, #000000, #14213d, #5a0001, #f6e8ea);
+}
+
+header, nav, section, article, main, footer, .cuisine-section {
+  border: 1px solid rgb(30, 0, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Header styles */
+header {
+  background-color: #030303;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center the items horizontally */
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+.column {
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.color-block {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.color1 {
+  background-color: #000000;
+  color: #fff;
+}
+
+.color2 {
+  background-color: #14213d;
+  color: #fff;
+}
+
+.color3 {
+  background-color: #5a0001;
+  color: #000;
+}
+
+.color4 {
+  background-color: #f6e8ea;
+  color: #000;
+}
+
+.color5 {
+  background-color: #dcd2d2;
+  color: #000;
+}
+
+#web-content h2 {
+  color: #3a414f; /* Platinum */
+}
+
+#web-content p {
+  color: #dcd2d2; /* Light gray text */
+}
+
+#color-palette h2 {
+  color: #3a414f; /* Platinum */
+}
+
+#color-palette p {
+  color: #dcd2d2; /* Light gray text */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.top {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.top:hover {
+  color: #555;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid darkblue;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(38, 9, 100);
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background for better contrast */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: black;
+  background-image: radial-gradient(blue,black);
+}
+
+/* Image styles */
+img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cuisine section styles */
+.cuisine-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: underline;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Adjust as needed */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.top:hover {
+  background-color: #6d1515;
+}
+
+/* Show the back-to-top button when scrolling */
+body:hover .top {
+  opacity: 1;
+}
+
+/* Base styles for all screen sizes */
+
+/* Extra Small */
+@media only screen and (max-width: 575px) {
+  body {
+    font-size: 14px;
+    background-color: #000000;
+    background-image: radial-gradient(#000000, #4a001f, #6a0f49);
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Media queries for different screen sizes */
+
+/* Small */
+@media only screen and (min-width: 576px) {
+  body {
+    background-color: #000000;
+    background-image: radial-gradient(#000, #210b2c, #55286f);
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #000000;
+    background-image: radial-gradient(#470a14, #171738, #51344d);
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #000000;
+    background-image: radial-gradient(#0a2463,#45040f);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+/* Extra Large screens */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #000000;
+    background-image: radial-gradient(#383f51,#201e50,#251351);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+}
