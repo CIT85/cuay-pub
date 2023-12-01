@@ -2,6 +2,7 @@
 body, h1, h2, p, ul, li, table, th, td, figure {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Global styles */
@@ -71,13 +72,18 @@ nav a:hover {
 /* Main content styles */
 main {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Common styles for .column and .color-palette */
 .column, .color-palette {
+  flex: 0 0 48%;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* .column specific styles */
@@ -88,16 +94,14 @@ main {
 
 /* .color-palette specific styles */
 .color-palette {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
   margin-top: 20px;
 }
 
 .color-block {
-  width: 48%;
   padding: 10px;
-  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -134,6 +138,53 @@ main {
 
 #web-content p, #color-palette p {
   color: #dcd2d2;
+}
+
+/* Contact form styles */
+#contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #5a0001;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #5a0001;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #250963;
 }
 
 /* Footer styles */
@@ -208,6 +259,139 @@ img {
 /* Show the back-to-top button when scrolling */
 body:hover .top {
   opacity: 1;
+}
+
+/* Your existing CSS code */
+
+/* Responsive images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flexbox for the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Grid for the ingredients and steps tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid darkblue;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Background cover for sections */
+.cuisine-section {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flexbox for the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Grid for the ingredients and steps tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid darkblue;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Background cover for sections */
+.cuisine-section, .subpage {
+  background-size: cover;
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+}
+
+/* Responsive images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flexbox for the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Grid for the ingredients and steps tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid darkgreen;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Background cover for sections */
+.cuisine-section {
+  background-size: cover;
+  background-position: center;
+  color: white; /* Adjust text color for better visibility */
+}
+
+/* Responsive images */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexbox for main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Background cover for sections */
+section {
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust text color for better visibility */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Additional styling for the footer */
+footer {
+    text-align: center;
+    padding: 20px;
 }
 
 /* Base styles for all screen sizes */
@@ -298,73 +482,4 @@ body:hover .top {
   h3 {
     font-size: 32px;
   }
-}
-
- body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f6e8ea;
-    color: #fff;
-    margin: 0;
-    padding: 0;
- }
-
-  header {
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-#contact-form {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-fieldset {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-legend {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-label {
-  display: block;
-   margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color:gray;            
-  color: #fff;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-   background-color: #250963;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 10px;
 }
