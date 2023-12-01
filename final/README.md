@@ -3,7 +3,7 @@
 Welcome to "Delicious Recipes from Around the World"! This is a simple web page showcasing recipes from American, Asian, and Italian cuisines. Explore the rich and diverse flavors of these culinary wonders.
 
 <figure>
-  <img src="../img/dishes.jpg" alt="Delicious Recipes" style="width: 300px; height: 300px;">
+  <img src="../img/dishes.jpg" alt="Various delicious dishes from American, Asian, and Italian cuisines" style="width: 300px; height: 300px;">
   <figcaption>Delicious Recipes</figcaption>
 </figure>
 
